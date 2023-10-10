@@ -1,0 +1,652 @@
+/* universal css */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: transparent;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 700px;
+    }
+}
+
+/* universal css */
+
+
+/* ==scrool tracker== */
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background-color:rgb(0, 0, 0) ;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color:#000000;
+}
+
+/* ==scrool tracker== */
+
+
+/* navbar css */
+
+.navbar {
+    background-color: transparent !important;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.navbar-brand:hover {
+    color: #fff;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+.offcanvas {
+    width: 300px !important;
+}
+
+.nav-item {
+    margin: 0px 0px 10px 20px;
+    display: grid;
+}
+
+.offcanvas-header {
+    text-align: center;
+    justify-content: center;
+}
+
+.navbar-toggler:focus,
+button:focus:not(:focus-visible) {
+    box-shadow: none;
+}
+
+.text-bg-dark {
+    color: #fff !important;
+    backdrop-filter: blur(5px);
+    background: transparent !important;
+    border-top: 1px solid rgba(255, 255, 255);
+    border-right: 1px solid rgba(255, 255, 255) !important;
+    border-bottom: 1px solid rgba(255, 255, 255);
+}
+
+/* navbar css */
+
+/* background video css */
+.home1-page,
+.home5-page,
+.home6-page {
+    background: #000;
+}
+
+.home-3 {
+    overflow: hidden;
+}
+
+.home-3:before {
+    content: '';
+    background: #000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.6;
+}
+
+.home1-page .menu,
+.home5-page .menu,
+.home6-page .menu,
+.home1-page .icon-menu,
+.home5-page .icon-menu,
+.home6-page .icon-menu {
+    background: #000000;
+}
+
+body .body-overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.home1-page .body-overlay,
+.home4-page .body-overlay,
+.home5-page .body-overlay {
+    opacity: 0.8;
+}
+
+/* background video css */
+
+/* download button css */
+.down-buttons {
+    display: flex;
+    justify-content: space-around;
+    top: 20px;
+    left: 20px;
+}
+
+.down-buttons button {
+    width: 150px;
+    height: 50px;
+    background-color: #ffffff2b;
+    margin: 20px;
+    color: #fffbfb;
+    position: relative;
+    overflow: hidden;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.down-buttons button:before,
+.down-buttons button:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: all 0.3s cubic-bezier(0.35, 0.1, 0.25, 1);
+}
+
+.down-buttons button:before {
+    right: 0;
+    top: 0;
+    transition: all 0.5s cubic-bezier(0.35, 0.1, 0.25, 1);
+}
+
+.down-buttons button:after {
+    left: 0;
+    bottom: 0;
+}
+
+.down-buttons button span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+.down-buttons button span:before,
+.down-buttons button span:after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 0;
+    background-color: #ffffff;
+    transition: all 0.3s cubic-bezier(0.35, 0.1, 0.25, 1);
+}
+
+.down-buttons button span:before {
+    right: 0;
+    top: 0;
+    transition: all 0.5s cubic-bezier(0.35, 0.1, 0.25, 1);
+}
+
+.down-buttons button span:after {
+    left: 0;
+    bottom: 0;
+}
+
+.down-buttons button p {
+    padding: 0;
+    margin: 0;
+    transition: all 0.4s cubic-bezier(0.35, 0.1, 0.25, 1);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.down-buttons button p:before,
+.down-buttons button p:after {
+    position: absolute;
+    width: 100%;
+    transition: all 0.4s cubic-bezier(0.35, 0.1, 0.25, 1);
+    z-index: 1;
+    left: 0;
+}
+
+.down-buttons button p:before {
+    content: attr(data-title);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.down-buttons button p:after {
+    content: attr(data-text);
+    top: 150%;
+    color: #ffffff;
+}
+
+.down-buttons button:hover:before,
+.down-buttons button:hover:after {
+    width: 100%;
+}
+
+.down-buttons button:hover span {
+    z-index: 1;
+}
+
+.down-buttons button:hover span:before,
+.down-buttons button:hover span:after {
+    height: 100%;
+}
+
+.down-buttons button:hover p:before {
+    top: -50%;
+    transform: rotate(5deg);
+}
+
+.down-buttons button:hover p:after {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.down-buttons button.start {
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px -10px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+
+.down-buttons button.start p:before {
+    top: -50%;
+    transform: rotate(5deg);
+}
+
+.down-buttons button.start p:after {
+    color: white;
+    transition: all 0s ease;
+    content: attr(data-start);
+    top: 50%;
+    transform: translateY(-50%);
+    animation: start 0.3s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes start {
+    from {
+        top: -50%;
+    }
+}
+
+.down-buttons button.start:hover:before,
+.down-buttons button.start:hover:after {
+    display: none;
+}
+
+.down-buttons button.start:hover span {
+    display: none;
+}
+
+.down-buttons button:active {
+    outline: none;
+    border: none;
+}
+
+.down-buttons button:focus {
+    outline: 0;
+}
+
+/* download button css */
+
+
+
+/* input add button css */
+#element_wrapper {
+    padding: 0px 0px 100px 0px;
+}
+
+.add-form-button {
+    display: inline-block;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+}
+
+.add-form-button:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5,
+        inset -4px -4px 12px #ffffff;
+}
+
+.add-form-button:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.add-form-button:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #009087;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.add-form-button:hover {
+    color: #ffffff;
+    border: 1px solid #009087;
+}
+
+.add-form-button:hover:before {
+    top: -35%;
+    background-color: #009087;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.add-form-button:hover:after {
+    top: -45%;
+    background-color: #009087;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+/* input add button css */
+
+
+
+/*edit sidebar css */
+body:not(.layout-fixed) .main-sidebar {
+    position: fixed;
+}
+
+.sidebar_panel {
+    width: 0;
+    height: inherit;
+    min-height: 100%;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    backdrop-filter: blur(7px);
+    background: #00000061 !important;
+    border-top: 1px solid rgba(255, 255, 255);
+    border-left: 1px solid rgba(255, 255, 255);
+    border-bottom: 1px solid rgba(255, 255, 255);
+}
+
+#main {
+    transition: 0.5s;
+}
+
+.sidebar_panel a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar_panel .closebtn {
+    font-size: 37px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar_panel {
+        padding-top: 15px;
+    }
+
+    .sidebar_panel a {
+        font-size: 18px;
+    }
+}
+
+.bootstrap-switch {
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    direction: ltr;
+    display: inline-block;
+    line-height: .5rem;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    z-index: 0;
+}
+
+.input_fromlay {
+    color: white;
+    padding: 73px 20px;
+}
+
+.input_textlay {
+
+    border: 0px;
+}
+
+.hide {
+    display: none;
+    color: red
+}
+
+.card-header span {
+    float: left;
+}
+
+/*edit sidebar css */
+
+
+/*footer css */
+
+.main-footer {
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    border-top: 0.5px solid #dee2e6;
+    color: #ffffff;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+.float-right {
+    display: flex;
+    justify-content: space-between;
+}
+
+.float-right a {
+    text-decoration: underline;
+    color: #fff;
+}
+
+/*footer css */
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: 0 solid rgba(0, 0, 0, .125);
+    border-radius: 0.25rem;
+    box-shadow: 0 0 1px rgba(0, 0, 0, .125), 0 1px 3px rgba(0, 0, 0, .2);
+    margin-bottom: 1rem;
+    background-color: #6363636e;
+}
+
+.card-header {
+    background-color: transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+    padding: 0.75rem 1.25rem;
+    position: relative;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    backdrop-filter: blur(5px);
+}
+
+.card-title {
+    float: left;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 0;
+    color: #fff;
+}
+
+.btn {
+    color: #fff;
+}
+
+.btn:hover {
+    color: #fff;
+}
+
+.card-header>.card-tools {
+    float: right;
+    margin-right: -0.625rem;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+    color: #fff;
+    backdrop-filter: blur(5px);
+}
+
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.card-body::after,
+.card-footer::after,
+.card-header::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.form-group label {
+    margin-top: 0px !important;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    box-shadow: inset 0 0 0 transparent;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.custom-select {
+    display: inline-block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 1.75rem 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    vertical-align: middle;
+    background: #fff url(img/download.svg) right 0.75rem center/8px 10px no-repeat;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .075);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+}
+
+.custom-select:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .075);
+}
+
+.form-check {
+    position: relative;
+    display: block;
+    padding-left: 1.25rem;
+}
+
+.form-check-input {
+    position: absolute;
+    margin-top: 0.3rem;
+    margin-left: -1.25rem;
+}

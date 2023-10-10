@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Builder</title>
+    <link rel="icon" type="image/png" href="asset/img/logo.png">
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/font awesome/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="home5-page">
+    <video class="body-overlay" muted autoplay loop>
+        <source src="asset/img/video5.mp4" type="video/mp4">
+    </video>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <img class="navbar-brand" src="asset/img/logo-2.png">
+            <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav m-auto lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Let's Create A Dynamic Form</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <button class="add-form-button" onclick="addform('name')">
+                                INPUT
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="add-form-button" onclick="addform('textarea')">
+                                TEXTAREA
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="add-form-button" onclick="addform('email')">
+                                EMAIL
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="add-form-button" onclick="addform('phone')">
+                                PHONE
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="add-form-button" onclick="addform('dropdown')">
+                                DROPDOWN
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="add-form-button" onclick="addform('checkbox')">
+                                CHECKBOX
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="add-form-button" onclick="addform('radiobutton')">
+                                RADIOBUTTON
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="add-form-button" onclick="addform('image')">
+                                IMAGE
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="down-buttons">
+                        <button class="btn"><span></span>
+                            <p data-start="good luck!" data-text="starting!" data-title="Download Form"></p>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" id="element_wrapper">
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="float-right">
+            <strong>Copyright &copy; 2023. All rights reserved.</strong>
+            <a href="http://priyanshupaliwal.42web.io/" target="_blank"><b>Priyanshu Paliwal</b></a>
+        </div>
+
+    </footer>
+
+
+    <!-- js -->
+
+    <script src="asset/js/jquery.js"></script>
+    <script src="asset/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
